@@ -91,10 +91,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            /*Text(
+            Text(
               'You have pushed the button this many times:',
             ),
-            Text(
+            /*Text(
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
@@ -103,8 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   'https://www.w3schools.com/w3css/img_lights.jpg'),
             ),*/
             Image(
-              image: AssetImage(
-                  'assets/a.jpg'),
+              image: AssetImage('assets/a.jpg'),
             ),
             RaisedButton.icon(
               onPressed: () {},
@@ -112,7 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.add_shopping_cart),
             ),
             IconButton(
-              onPressed: () {print('Book Marked！');},
+              onPressed: () {
+                print('Book Marked！');
+              },
               icon: Icon(Icons.drafts),
             ),
           ],
